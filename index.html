@@ -1,767 +1,289 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>CcurvesGraphics</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Ccurves | Full Stack Developer Portfolio | React, Node.js and more</title>
+    <meta name="description"
+        content="Full-stack developer specialized in NodeJS. I provide services such as application development, API integration and development and database design.">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Full Stack Developer Portfolio | React, Node.js and more" />
+    <meta property="og:description"
+        content="Full-stack developer specialized in React and NodeJS. I provide services such as application development, API integration and development and database design." />
+    <meta property="og:url" content="http://ccurves.github.io/" />
+    <meta property="og:site_name" content="ccurves.io" />
+    <meta property="og:image" content="http://ccurves.github.io/images/pic_1.jpg" />
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/vendor.css">
-
-    <style type="text/css" media="screen">
-        .s-styles {
-            background-color: var(--color-bg);
-            padding-top: calc(6.5 * var(--space));
-            padding-bottom: calc(4.5 * var(--space));
-            position: relative;
-        }
-
-        .s-styles .intro h1 {
-            margin-top: 0;
-        }
-    </style>
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/1x/favicon-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/1x/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/1x/favicon.png">
-    <link rel="manifest" href="site.webmanifest">
-
+    <link rel="stylesheet" href="/css/style.css">
+    <link id="theme-style" rel="stylesheet" href="/css/blue.css">
 </head>
 
-<body id="top">
+<body>
+    <section class="s-dark">
+        <div class="main-container">
+            <div class="greeting-wrapper">
+                <h1>Hello, I'm Simon Covenant</h1>
+            </div>
 
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+                    </div>
+                    <ul id="navigation">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="left-column">
+                    <img src="/images/pic_1.jpg" id="profile_pic" alt="">
+                    <h5 style="text-align: center; line-height: 0;">Selct Your Theme</h5>
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+                    <div id="settings-note">"Theme settings will be saved for <br>
+                        your next visit</div>
+                </div>
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>What I Do</h3>
+                            <p>I help ideas come to life by
+                                building great apps and digital experinces.
+                                I have a strong preference for
+                                intuitive, easy to use UX/UI design.
+
+                            </p>
+                            <div id="corner-bl" class="corner"></div>
+                            <div id="corner-br" class="corner"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <section class="s-light">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>Who Am I</h4>
 
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="s-header__logo">
-            <a href="index.html">
-                <img src="/images/1x/logo-2.png" alt="Homepage">
-            </a>
-        </div>
-
-        <div class="s-header__content">
-
-            <nav class="s-header__nav-wrap">
-                <ul class="s-header__nav">
-                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
-                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
-                    <li><a class="smoothscroll" href="#services" title="Services">Services</a></li>
-                    <li><a class="smoothscroll" href="#portfolio" title="Works">Works</a></li>
-                </ul>
-            </nav> <!-- end s-header__nav-wrap -->
-
-            <a href="mailto:simoncovenant47@gmail.com" class="btn btn--primary btn--small">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
-                </svg>
-                Get In Touch
-            </a>
-
-        </div> <!-- end header-content -->
-
-        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- hero
-    ================================================== -->
-    <section id="hero" class="s-hero target-section">
-
-        <div class="s-hero__bg">
-            <div class="gradient-overlay"></div>
-        </div>
-
-        <div class="row s-hero__content">
-            <div class="column">
-
-                <h1>Hello.</h1>
-                <div class="s-hero__content-about">
-
+                    <p>A recent graduate from a one year Software Development Diploma Program at Ekobits ICT Academy
+                        with skills in web development and a burning curiosity to learn. I’m an ambitious problem solver
+                        with a passion for web applications and technology
+                    </p>
+                    <hr>
                     <p>
-                        I am Ccurves. <br>
-                        I build great apps <br>
-                        & digital experiences.
+                        Prior to becoming a developer, I worked as an UI designer
+                        and this helps me picture the project from the user point of view. My go-to technoloy is NodeJS
+                        and I have completed some projects using it.
+                        I'm a huge music lover and you'll find me plugged in listening to music for at least 4 - 5 hours
+                        on
+                        any given day, Most of my time is spent in front of a system coding
+                        or with friends brainstroming the next big project we could build.
+
                     </p>
 
-                    <footer>
-                        <div class="s-hero__content-social">
-                            <a href="https://www.facebook.com/ccurvesgraphics"><i class="fab fa-facebook-f"
-                                    aria-hidden="true"></i></a>
-                            <a href="https://github.com/ccurves"><i class="fab fa-github" aria-hidden="true"></i></a>
-                            <a href="https://www.instagram.com/ccurves_graphics/"><i class="fab fa-instagram"
-                                    aria-hidden="true"></i></a>
-                            <a href="https://dribbble.com/simon_zuriel"><i class="fab fa-dribbble"
-                                    aria-hidden="true"></i></a>
-                            <a href="https://www.behance.net/ccurves"><i class="fab fa-beehance"
-                                    aria-hidden="true"></i></a>
-                        </div>
-                    </footer>
-                </div>
+                    <h4>My Expertise</h4>
 
-            </div>
-        </div>
+                    <p>A MEN stack developer with primary focus on Node + Mongo: <a target="_blank"
+                            href="/docs/resume.pdf">Download Resume</a>
+                    </p>
 
-        <!-- <div class="s-hero__video">
-            <a class="s-hero__video-link"
-                href="https://player.vimeo.com/video/117310401?color=01aef0&amp;title=0&amp;byline=0&amp;portrait=0"
-                data-lity="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M21 12l-18 12v-24z" /></svg>
-                <span class="s-hero__video-text">Play Video</span>
-            </a>
-        </div> -->
+                    <div id="tech">
+                        <ul>
+                            <li>Node</li>
+                            <li>Express</li>
+                            <li>Mongoose</li>
+                            <li>EJS</li>
+                            <li>Git</li>
+                        </ul>
 
-        <div class="s-hero__scroll">
-            <a href="#about" class="s-hero__scroll-link smoothscroll">
-                Scroll Down
-            </a>
-        </div>
-
-    </section> <!-- end s-hero -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about">
-
-        <div class="horizontal-line"></div>
-
-        <div class="row">
-            <div class="column large-12">
-
-                <div class="section-title" data-num="01" data-aos="fade-up">
-                    <h3 class="h6">Who Am I</h3>
-                </div>
-
-            </div>
-
-            <div class="column large-6 w-900-stack s-about__intro-text">
-                <h1 class="title" data-aos="fade-up">
-                    I'm Simon Covenant, a MERN Stack Developer based in Lekki, Lagos. I build thoughtful digital
-                    experiences and
-                    beautiful brand aesthetics.
-                </h1>
-
-                <p class="lead" data-aos="fade-up">
-                    I'm a huge music lover and you'll find me plugged in listening to music for at least 4 - 5 hours on
-                    any given day. <br><br>
-
-                    I’m an ambitious problem solver with a passion for web
-                    applications and technology, and who would like to
-                    join a team of like-minded developers. <br><br>
-
-                    I started my own branding agency because I have come to
-                    understand that, people often choose products based on their perceived value rather than their
-                    actual value.<br><br>
-
-                    So I help change the way a brand is perceived through thoughtful digital services
-
-                </p>
-            </div>
-
-            <div class="column large-6 w-900-stack s-about__photo-block">
-                <div class="s-about__photo" data-aos="fade-up"></div>
-            </div>
-        </div>
-
-        <!-- <div class="row block-large-1-2 block-tab-full s-about__process item-list">
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Define</h3>
-                <p>
-                    In the begining of every project I conduct my field research.So as to
-                    learn as much as I can about the company, its history, its target audience,
-                    its current brand identity and the effect it has had on market perception.
-                    And I review any brand identities it has used in the past.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Design</h3>
-                <p>
-                    So after undersatnding the client's needs and desires, I then compile a design brief that reflects
-                    the expectations of the client and guides my design process.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Build</h3>
-                <p>
-                    Once I have designed a logo that fits the brief, I bulid an identity system. The purpose of the
-                    identity system is to form a
-                    systematic visual language around
-                    the logo, one that complements the
-                    design thinking of the logo and offers
-                    a family of useful, flexible elements
-                    that will help to design marketing ads.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Launch</h3>
-                <p>
-                    So the last step is to introduce the logo, and this normally done through a social media or blog
-                    post.
-                </p>
-            </div>
-        </div> -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services">
-
-        <div class="row">
-            <div class="column large-12">
-                <div class="section-title" data-num="02" data-aos="fade-up">
-                    <h3 class="h6">My Expertise</h3>
-                </div>
-            </div>
-            <!-- <div class="column large-6 w-900-stack">
-                <h1 class="display-1" data-aos="fade-up">
-                    Due to the
-                </h1>
-            </div>
-            <div class="column large-6 w-900-stack">
-                <p class="lead" data-aos="fade-up">
-                    Keeping your brand consistent is key.
-                    That means that the graphic elements,
-                    copy, and any type of content all
-                    must be part of the same concept. And
-                    Each one needs to be tailored to the
-                    preferences of your target consumer.
-                </p>
-            </div> -->
-        </div>
-
-        <div class="row block-large-1-2 block-tab-full s-services__services item-list">
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--frontend"></span>
-                <h3 class="item-title">Web Development</h3>
-                <p>
-                    Making use of technologies like React JS, Node Js, Mongo and Express I help take businesses
-                    online with a stunning, professional
-                    and responsive website that will help you connect with your audience better.
-                    Take advantage of a whole new market for your products & services.
-                </p>
-            </div>
-            <!-- <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--branding"></span>
-                <h3 class="item-title">SEO Optimization</h3>
-                <p>
-                    Keeping your brand consistent is key and has to be tailored to the
-                    preferences of your target audience. Your appearance is a key factor in your growth. You only have
-                    one chance to make a first impression, Lets make it the perfect one.
-                </p>
-            </div> -->
-            <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--illustration"></span>
-                <h3 class="item-title">UI/ Graphic Design</h3>
-                <p>
-                    If you want your website, desktop or mobile app to be able to compete in today’s market, it’s got to
-                    be simple, intuitive and fun. And that is my mantra when I design the look and feel of an
-                    application. I also design illustrations and these illustrations can be used to add emphasis to app
-                    or
-                    landing page messages, presentations, articles and more.
-                </p>
-            </div>
-            <!-- <div class="column item item-service" data-aos="fade-up">
-                <span class="service-icon service-icon--ecommerce"></span>
-                <h3 class="item-title">Website Deployment</h3>
-                <p>
-                    Social Media marketing plays a major role in the success of every business. Irrespective of the type
-                    of
-                    brand, you have or the business you run, Potential customers are searching for businesses like yours
-                    online RIGHT NOW. Let me help put your brand out there.
-                </p>
-            </div> -->
-        </div>
-
-    </section> <!-- end s-services -->
-
-    <section id="portfolio" class="s-portfolio">
-
-        <div class="row s-porfolio__top">
-            <div class="column large-6 w-900-stack">
-                <div class="section-title" data-num="03" data-aos="fade-up">
-                    <h3 class="h6">Recent Works</h3>
-                </div>
-            </div>
-            <div class="column large-6 w-900-stack">
-                <h1 class="heading" data-aos="fade-up">
-                    Here are some of my projects I did lately. Feel
-                    free to check them out.
-                </h1>
-            </div>
-        </div> <!-- end s-portfolio__top-->
-
-        <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
-
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/1x/Asset 2.png" title="Tori NewsApp"
-                            data-size="1050x700">
-                            <img src="images/portfolio/1x/Asset 2.png"
-                                srcset="images/portfolio/1x/Asset 2.png 1x, images/portfolio/1x/Asset 2.png 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Web Development</div>
-                        <h4 class="folio-item__title">Tori News App</h4>
-                    </div>
-                    <a href="https://c-tori.netlify.app/" title="Project Link" class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Tori is a voice controlled react news application that gives the user
-                            latest news and updates from around Nigeria.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/wanbuk-foods-01.jpg"
-                            title="Wanbuk Foods" data-size="1050x700">
-                            <img src="images/portfolio/wanbuk-foods-01.jpg"
-                                srcset="images/portfolio/wanbuk-foods-01.jpg 1x, images/portfolio/wanbuk-foods-01.jpg 2x"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Branding</div>
-                        <h4 class="folio-item__title">Wanbuk Foods</h4>
-                    </div>
-                    <a href="https://www.behance.net/gallery/102822833/Wanbuk-Fooods" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Wanbuk Foods is a company that produces Ogi (i.e Nigerian corn meal made from wet corn
-                            starch), they wanted a new look that will resonate with their audience.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/1x/Asset 3.png" title="Calculator"
-                            data-size="1050x700">
-                            <img src="images/portfolio/1x/Asset 3.png"
-                                srcset="images/portfolio/1x/Asset 3.png 1x, images/portfolio/1x/Asset 3.png 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Web Development</div>
-                        <h4 class="folio-item__title">Calculator With Neumorphism Design</h4>
-                    </div>
-                    <a href="http://l-light.000webhostapp.com/sam/" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>A Calculator bulit with neumorphism design and dark and light theme </p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/1x/Asset 1.png"
-                            title="Parabathai Chat App" data-size="1050x700">
-                            <img src="images/portfolio/1x/Asset 1.png"
-                                srcset="images/portfolio/1x/Asset 1.png, images/portfolio/1x/Asset 1.png 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Web Development</div>
-                        <h4 class="folio-item__title">Parabathai Chat Application</h4>
-                    </div>
-                    <a href="https://5f91036c866375362c38bc14--parabathai.netlify.app/" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Parabathai chat app was a react project I created when me and my
-                            friends needed a platform to able to comunicate and share ideals without been
-                            restricted by the lack of an andorid phone.
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/efficeint-solutions-01.jpg"
-                            title="Efficeint Solutions" data-size="1050x700">
-                            <img src="images/portfolio/efficeint-solutions-01.jpg"
-                                srcset="images/portfolio/efficeint-solutions-01.jpg 1x, images/portfolio/efficeint-solutions-01.jpg 2x"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">UI Design</div>
-                        <h4 class="folio-item__title">Efficeint Solutions</h4>
-                    </div>
-                    <a href="https://www.behance.net/gallery/102593427/Efficient-Solutions" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>EFFICIENT SOLUTIONS is a Recycling company that allows
-                            users to convert their recyclable items into cash rewards. They
-                            wanted to create a mobile app and reqiured UI design, the interface had
-                            to be straight to the point, easy to use and streamlined
-                            to the persona they provided.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/yellow-foundation-01.jpg"
-                            Title="The Yellow Foundation" data-size="1050x700">
-                            <img src="images/portfolio/yellow-foundation-01.jpg"
-                                srcset="images/portfolio/yellow-foundation-01.jpg 1x, images/portfolio/yellow-foundation-01.jpg 2x"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Branding</div>
-                        <h4 class="folio-item__title">The Yellow Foundation</h4>
-                    </div>
-                    <a href="https://dribbble.com/shots/11658181-Logo-Design-For-The-Yellow-Foundation"
-                        title="Project Link" class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>THE YELLOW FOUNDATION is an Non-governmental Foundation
-                            that needed a logo design; The Logo was to be able
-                            to tell a story, look like a foundation logo while at
-                            the same time not look cliche.
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/kintsbrands-01.jpg" title="KINTSBRAND"
-                            data-size="1050x700">
-                            <img src="images/portfolio/kintsbrands-01.jpg"
-                                srcset="images/portfolio/kintsbrands-01.jpg 1x, images/portfolio/kintsbrands-01.jpg 2x"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Web Design</div>
-                        <h4 class="folio-item__title">KINTSBRAND</h4>
-                    </div>
-                    <a href="https://dribbble.com/shots/11423571-kintsbrands-web-design-01" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>KINTSBRANDS is a fashion company that,
-                            needed a new look and website done. It needed
-                            something that will appeal to the audience
-                            but also capture the company goals
-                            and ideals i.e Class, Trend and Business.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/curves-music-01.jpg"
-                            title="Curves Music" data-size="1050x700">
-                            <img src="images/portfolio/curves-music-01.jpg"
-                                srcset="images/portfolio/curves-music-01.jpg 1x, images/portfolio/curves-music-01.jpg 2x"
-                                alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">UI Design</div>
-                        <h4 class="folio-item__title">Curves Music</h4>
-                    </div>
-                    <a href="https://www.behance.net/gallery/102823483/CurvesMusic" title="Project Link"
-                        class="folio-item__project-link">
-                        Project Link
-                    </a>
-                    <div class="folio-item__caption">
-                        <p>CurvesMusic is a music app that offers new and trending
-                            features to msic lovers. The interface was to be classy, striking
-                            and different. </p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/moody-01.jpg" title="Illustration"
-                            data-size="1050x700">
-                            <img src="images/portfolio/moody-01.jpg"
-                                srcset="images/portfolio/moody-01.jpg 1x, images/portfolio/moody-01.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Illustration</div>
-                        <h4 class="folio-item__title">Moody Sunset</h4>
-                    </div>
-                    <a href="https://dribbble.com/shots/13964151-Landscape-Sunset-Scene" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>Just finished this illustration recently, based of the Vietnam moutains and fishermen.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/cowboy-01.jpg" title="Illustration"
-                            data-size="1050x700">
-                            <img src="images/portfolio/cowboy-01.jpg"
-                                srcset="images/portfolio/cowboy-01.jpg 1x, images/portfolio/cowboy-01.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Illustration</div>
-                        <h4 class="folio-item__title">Western Cowboy Illustration</h4>
-                    </div>
-                    <a href="https://dribbble.com/shots/11398645-western-cowboy" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>During my free time I just go online and if I see any vector illustration that inspires me, I
-                            give it a try and see how it will turn out. This was inspried by a post i saw on instagram.
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/dreamer-01.jpg"
-                            title="Dreamer Streetwear" data-size="1050x700">
-                            <img src="images/portfolio/dreamer-01.jpg"
-                                srcset="images/portfolio/dreamer-01.jpg 1x, images/portfolio/dreamer-01.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Ad Design</div>
-                        <h4 class="folio-item__title">Dreamer Streetwear</h4>
-                    </div>
-                    <a href="https://www.behance.net/gallery/102825709/Dreamer-Streetwear" title="Project Link"
-                        class="folio-item__project-link">Project
-                        Link</a>
-                    <div class="folio-item__caption">
-                        <p>This is an illustration based on the Vietnam mountain ranges and fisherman. Also inspried by
-                            an arist called tutvid.</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-
-        </div> <!-- folio-list -->
-
-    </section> <!-- end s-portfolio -->
-
-
-    <!-- clients
-    ================================================== -->
-    <div id="clients" class="section s-clients">
-
-        <div class="row narrower s-clients__top h-text-center">
-            <div class="column">
-                <h1 class="heading" data-aos="fade-up">
-                    What my client has to say.
-                </h1>
-            </div>
-        </div> <!-- s-clients__top -->
-
-
-        <div class="row testimonials collapse">
-
-            <div class="column large-12">
-
-                <div class="testimonial-slider" data-aos="fade-up">
-
-                    <div class="testimonial-slider__slide">
-                        <p>
-                            "Covenant is a great developer and a reliable resource. He has consistently helped bring
-                            significant value to a lot of our products in a timely manner."
-                        </p>
-                        <div class="testimonial-slider__author">
-                            <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
-                            <cite class="testimonial-slider__cite">
-                                <strong>Yomi Gerrad</strong>
-                                <span>Co Founder, Dream Streetwear</span>
-                            </cite>
-                        </div>
-                    </div> <!-- end testimonials__slide -->
-
-
-                </div> <!-- end testimonial slider -->
-
-            </div> <!-- end column -->
-
-        </div> <!-- end row -->
-
-
-    </div> <!-- end s-clients -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section class="s-contact">
-
-        <div class="row narrower s-contact__top h-text-center">
-            <div class="column">
-                <h3 class="h6">Get In Touch</h3>
-                <h1 class="title">
-                    Have an idea or an epic project in mind? Talk to
-                    me. Let us work together and make something great.
-                    Shoot me a message at
-                </h1>
-            </div>
-        </div> <!-- s-footer__top -->
-
-        <div class="row h-text-center">
-            <div class="column">
-                <p class="s-contact__email mail">
-                    <a href="mailto:#simoncovenat47@gmail.com">simoncovenant47@gmail.com</a>
-                </p>
-            </div>
-        </div>
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer class="s-footer">
-        <div class="row row-y-top">
-
-            <div class="column large-8 medium-12">
-                <div class="row">
-                    <div class="column large-7 tab-12 s-footer__block">
-                        <h4 class="h6">Where to Find Me</h4>
-
-                        <p>
-                            Goodwill Estate, Awoyaya <br>
-                            Ibeju-Lekki, Lagos <br>
-                            Nigeria. <br>
-                            <a href="tel:234-807-9092-298">+234 807 9092 298</a>
-                        </p>
-                    </div>
-
-                    <div class="column large-5 tab-12 s-footer__block">
-                        <h4 class="h6">Follow Me</h4 class="h6">
-
-                        <ul class="s-footer__list md">
-                            <li><a href="https://www.facebook.com/ccurvesgraphics">Facebook</a></li>
-                            <li><a href="https://github.com/ccurves">GitHub</a></li>
-                            <li><a href="https://www.instagram.com/ccurves_graphics/">Instagram</a></li>
-                            <li><a href="https://dribbble.com/simon_zuriel">Dribbble</a></li>
-                            <li><a href="https://www.behance.net/ccurves">Dribbble</a></li>
+                        <ul>
+                            <li>Google Maps API</li>
+                            <li>Javascript</li>
+                            <li>Heroku</li>
+                            <li>HTML/CSS</li>
+                            <li>React</li>
                         </ul>
                     </div>
                 </div>
-            </div>
+                <div class="social-links">
+                    <div class="container">
+                        <div class="skillbar clearfix " data-percent="95%">
+                            <div class="skillbar-title" style="background:  #2c3e50;"><span>HTML5</span></div>
+                            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                            <div class="skill-bar-percent Count">95</div>
+                        </div> <!-- End Skill Bar -->
 
-            <div class="column large-4 medium-12 s-footer__block--end">
-                <a href="/docs/SIMON COVENANT CHINEDU.pdf" download class="btn h-full-width">Download CV</a>
+                        <div class="skillbar clearfix " data-percent="85%">
+                            <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+                            <div class="skillbar-bar" style="background: #3498db;"></div>
+                            <div class="skill-bar-percent Count">85</div>
+                        </div> <!-- End Skill Bar -->
 
-                <div class="ss-copyright">
-                    <span>Copyright &copy; 2020</span>
-                    <span>Design by CcurvesGraphics</span>
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style="background: #2c3e50;"><span>Node</span></div>
+                            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                            <div class="skill-bar-percent Count">75</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style="background: #46465e;"><span>Mongo</span></div>
+                            <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                            <div class="skill-bar-percent Count">80</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="65%">
+                            <div class="skillbar-title" style="background: #333333;"><span>React</span></div>
+                            <div class="skillbar-bar" style="background: #525252;"></div>
+                            <div class="skill-bar-percent Count">75</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="90%">
+                            <div class="skillbar-title" style="background: #2c3e50;"><span>Illustrator</span></div>
+                            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                            <div class="skill-bar-percent Single Count">90</div>
+                        </div> <!-- End Skill Bar -->
+
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style="background: #124e8c;"><span>Adobe XD</span></div>
+                            <div class="skillbar-bar" style="background: #4288d0;"></div>
+                            <div class="skill-bar-percent Count">70</div>
+                        </div> <!-- End Skill Bar -->
+
+                    </div>
                 </div>
             </div>
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    top
-                </a>
-            </div> <!-- end ss-go-top -->
-
         </div>
-    </footer>
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
+    </section>
+    <section class="s-dark" id="portfolio">
+        <div class="main-container">
+            <h3 style="text-align: center;">My Recent Works</h3>
+            <p style="text-align: center;">Here are some of my projects I did lately. Feel free to check them out.
+            </p>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img src="/images/wakadupe.png" class="thumbnail" alt="" srcset="">
+                        <div class="post-preview">
+                            <h4 class="post-title">WakaDupe Tourist Web App</h4>
+                            <p class="post-intro">Recently I just found out that there is a river behind my home and
+                                this river actually leads to a hidden village. Have lived here for quite some time this
+                                came as a...</p>
+                            <a href="post1.html">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+                <div>
+                    <div class="post">
+                        <img src="/images/parabathai.png" class="thumbnail" alt="" srcset="">
+                        <div class="post-preview">
+                            <h4 class="post-title">Parabathai ChatApp</h4>
+                            <p class="post-intro">Few months ago I lost my phone and was looking for a way to still
+                                communicate with my friends and I
+                                couldn’t
+                                use any social media platform due to a restriction my...
+                            </p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img src="/images/alan-ai.png" class="thumbnail" alt="" srcset="">
+                        <div class="post-preview">
+                            <h4 class="post-title">Tori (Voice Controlled News App)</h4>
+                            <p class="post-intro">This is a React based application where users can converse with an AI
+                                and get the latest news from around the world. Using just their voice...</p>
+                            <a href="post2.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="s-light" id="contact">
+        <div class="main-container">
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <div class="title">
+                <p>
+                    Have an idea or an epic project in mind? Talk to
+                    me. Let us work <br> together and make something great.
+                    Shoot me a message at
+                </p>
+
+                <h5><a href="mailto:#simoncovenant47@gmail.com">simoncovenant47@gmail.com</a></h5>
+            </div>
+
+            <!-- <form action="" id="contact-form">
+                <label for="">Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label for="">Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label for="">Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label for="">Message</label>
+                <textarea name="message" class="input-field" cols="30" rows="5"></textarea>
+                <input id="submit-btn" type="submit" value="send">
+            </form> -->
+            <div class="post-wrapper">
+
+                <div>
+                    <h4 class="h6">Where to Find Me</h4>
+
+                    <p>
+                        Goodwill Estate, Awoyaya <br>
+                        Ibeju-Lekki, Lagos <br>
+                        Nigeria. <br>
+                        <a href="tel:234-807-9092-298">+234 807 9092 298</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class=" h6">Follow Me</h4 class="h6">
+
+                    <ul class="s-footer__list md" style="padding: 0;">
+                        <li><a href=" https://www.facebook.com/ccurvesgraphics">Facebook</a></li>
+                        <li><a href="https://twitter.com/simon_zuriel">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/ccurves_graphics/">Instagram</a></li>
+                        <li><a href="https://github.com/ccurves">GitHub</a></li>
+                    </ul>
+                </div>
+                <div style="padding-top: 60px;">
+                    <a href="mailto:#simoncovenant47@gmail.com" id="submit-btn" class="btn h-full-width">Let's Talk</a>
+
+                    <div class="ss-copyright" style="margin-top: 15px;">
+                        <span>Copyright &copy; 2020 | </span>
+                        <span>Design by ccurves</span>
+                    </div>
                 </div>
             </div>
 
         </div>
-
-    </div> <!-- end photoSwipe background -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+    </section>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
